@@ -82,7 +82,6 @@ function renderCustomerForm(delegate) {
     var input = document.createElement("input");
     input.setAttribute('type', 'text');
     input.setAttribute('name', 'create-lastname');
-    input.setAttribute('value', 'DUMMY');
     cell.appendChild(input);
     row.appendChild(cell);
     //First Name
@@ -90,7 +89,6 @@ function renderCustomerForm(delegate) {
     var input = document.createElement("input");
     input.setAttribute('type', 'text');
     input.setAttribute('name', 'create-firstname');
-    input.setAttribute('value', 'DUMMY');
     cell.appendChild(input);
     row.appendChild(cell);
     //Email
@@ -98,7 +96,6 @@ function renderCustomerForm(delegate) {
     var input = document.createElement("input");
     input.setAttribute('type', 'text');
     input.setAttribute('name', 'create-email');
-    input.setAttribute('value', 'dummy@host.com');
     cell.appendChild(input);
     row.appendChild(cell);
     //City
@@ -106,7 +103,6 @@ function renderCustomerForm(delegate) {
     var input = document.createElement("input");
     input.setAttribute('type', 'text');
     input.setAttribute('name', 'create-city');
-    input.setAttribute('value', 'DUMMY');
     cell.appendChild(input);
     row.appendChild(cell);
     //Country

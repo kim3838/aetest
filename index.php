@@ -52,38 +52,7 @@
                 <legend>Customers</legend>
                 <form enctype="multipart/form-data" method="post" id="customer-form">
                     <table border="1" id="customersTable">
-                        <tr><th>Picture</th><th>Last Name</th><th>First Name</th><th>Email</th><th>City</th><th>Country</th><th></th></tr>
-                        <tr>
-                            <td>
-                                <input class="input" type="file" name="image" id="image">
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="lastname" id="lastname" value="LASTNAME03">
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="firstname" id="firstname" value="FIRSTNAME03">
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="email" id="email" value="name03@host.com">
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="city" id="city" value="CITY03">
-                            </td>
-                            <td>
-                                <select class="input" name="country" id="country">
-                                    <option value="">Select Country</option>
-                                    <option value="United States">United States</option>
-                                    <option value="Canada">Canada</option>
-                                    <option value="Japan">Japan</option>
-                                    <option value="Audi">United Kingdom</option>
-                                    <option value="France">France</option>
-                                    <option value="Germany">Gernamy</option>
-                                </select>
-                            </td>
-                            <td>
-                                <input type="button" value="Save" onClick="submitCustomerForm()"/>
-                            </td>
-                        </tr>
+
                     </table>
                 </form>
             </fieldset>
