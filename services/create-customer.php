@@ -64,6 +64,11 @@ $app::debug(print_r(['CREATE CUSTOMER ERROR', $errors], true));
 
 if (!count($errors)) {
     $relativeStoragePath = "../storage/app/attachments/";
+    if (!file_exists($relativeStoragePath))
+    {
+        mkdir($relativeStoragePath, 0777, true);
+    }
+
     $storagePath = "./storage/app/attachments/";
     $fileName = $request['file']['slug'] . '.' . strtolower($request['file']['extension']);
 
