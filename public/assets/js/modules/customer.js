@@ -337,13 +337,12 @@ function editCustomer(id){
         }
     };
 
-    var url = new URL('http://localhost/web/2022-07-23-aeptest/services/customer.php');
-    url.searchParams.set('filters', JSON.stringify({
+    var formData = new FormData();
+    formData.append('filters', JSON.stringify({
         'id' : id
     }));
-
-    request.open('GET', url);
-    request.send();
+    request.open('POST', './services/customer.php');
+    request.send(formData);
 }
 
 function searchCustomer(){
@@ -367,12 +366,11 @@ function searchCustomer(){
         }
     };
 
-    var url = new URL('http://localhost/web/2022-07-23-aeptest/services/customer.php');
-    url.searchParams.set('filters', JSON.stringify({
+    var formData = new FormData();
+    formData.append('filters', JSON.stringify({
         'email' : email
     }));
-
-    request.open('GET', url);
-    request.send();
+    request.open('POST', './services/customer.php');
+    request.send(formData);
 }
 

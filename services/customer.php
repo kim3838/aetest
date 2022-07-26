@@ -3,7 +3,8 @@ require("dbconnection.php");
 require_once('../app/Class/App.php');
 $app = new App();
 
-$filters = json_decode($_GET['filters'], true);
+$filters = json_decode($_POST['filters'], true);
+
 
 $query = "SELECT * FROM customers";
 
