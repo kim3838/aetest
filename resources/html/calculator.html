@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>aeptest</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body, button {
+            font-family: "Spline Sans", sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid-item {
+            margin: 2px;
+            text-align: center;
+        }
+        .calculator-display{
+            margin: 2px;
+            font-family: 'Share Tech Mono', monospace;
+            grid-column: 1 / span 3;
+            text-align: right;
+        }
+    </style>
+    <script src="./../../public/assets/js/calculator.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <input class="calculator-display" type="text" id="calculator-display" disabled value="234+522223-3123234+522223-3123234+522223-3123234+522223-3123">
+        <button class="grid-item" onclick="cast('1')">1</button>
+        <button class="grid-item" onclick="cast('2')">2</button>
+        <button class="grid-item" onclick="cast('3')">3</button>
+        <button class="grid-item" onclick="cast('4')">4</button>
+        <button class="grid-item" onclick="cast('5')">5</button>
+        <button class="grid-item" onclick="cast('6')">6</button>
+        <button class="grid-item" onclick="cast('7')">7</button>
+        <button class="grid-item" onclick="cast('8')">8</button>
+        <button class="grid-item" onclick="cast('9')">9</button>
+        <button class="grid-item" onclick="cast('0')">0</button>
+        <button class="grid-item" onclick="cast('+')">+</button>
+        <button class="grid-item" onclick="cast('-')">-</button>
+        <button class="grid-item" onclick="cast('=')">=</button>
+    </div>
+</body>
+</html>
