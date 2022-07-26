@@ -66,6 +66,10 @@ if (!count($errors)) {
 
     if ($request['file']['tmp_loc']) {
         $relativeStoragePath = "../storage/app/attachments/";
+        if (!file_exists($relativeStoragePath))
+        {
+            mkdir($relativeStoragePath, 0777, true);
+        }
         $storagePath = "./storage/app/attachments/";
         $fileName = $request['file']['slug'] . '.' . strtolower($request['file']['extension']);
 
